@@ -1,16 +1,9 @@
 [
     {
         "id": 1,
-        "description": "BELAJAR CRUD",
-        "status": "test",
-        "createdAt": "2026-05-22 05:35:44",
-        "updateAt": "2026-05-22 14:21:30"
-    },
-    {
-        "id": 2,
-        "description": "BELAJAR PHP",
-        "status": "start",
-        "createdAt": "2026-05-22 14:21:59",
-        "updateAt": "2026-05-22 14:22:37"
+        "description": "LEARN PY",
+        "status": "todo",
+        "createdAt": "2026-05-22 14:41:38",
+        "updateAt": "2026-05-22 14:41:38"
     }
 ]

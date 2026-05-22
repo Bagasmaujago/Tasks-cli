@@ -57,6 +57,28 @@ function updateStatus(int $id, string $status) {
     echo "Task updated successfully" . PHP_EOL;
 }
 
+//Remove task
+function removeTodo(int $id):void {
+    $tasks = readTasks();
+    $found = false;
+
+    foreach($tasks as $index => $task) {
+        //find id
+        if($task["id"] == $id ) {
+            unset($tasks[$index]);
+            $found = true;
+            break;
+        }
+    }
+    if (!$found) {
+        echo "Task not found" . PHP_EOL;
+        return;
+    }
+    $tasks = array_values($tasks);
+    saveTasks($tasks);
+    echo "Task deleted successfully" . PHP_EOL;
+}
+
 
 
 ?>

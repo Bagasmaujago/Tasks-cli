@@ -13,5 +13,12 @@ switch($command) {
         $id = $argv[2] ?? null;
         $status = $argv[3] ?? null;
         updateStatus($id,$status);
+        break;
+    case "remove":
+        $id = $argv[2] ?? null;
+        removeTodo($id);
+        break;
+    default:
+        echo "just chose add,update or remove plis";
 }
 ?>
